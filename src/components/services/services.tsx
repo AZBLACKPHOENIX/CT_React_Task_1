@@ -1,4 +1,4 @@
-import styles from './ourservices.module.css';
+import styles from './Ourservices.module.css';
 import { FaLaptopCode, FaMobileAlt, FaDraftingCompass, FaCameraRetro } from 'react-icons/fa';
 import { Line } from '../Line/line';
 
