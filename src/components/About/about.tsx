@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './about.module.css';
 import { FaEye, FaCode } from 'react-icons/fa';
 import { Line } from '../Line/line';
