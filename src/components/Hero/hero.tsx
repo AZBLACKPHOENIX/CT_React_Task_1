@@ -1,4 +1,4 @@
-import styles from './Hero.module.css'
+import styles from './hero.module.css'
 import { Line } from '../Line/line'
 
 export function HERO() {
