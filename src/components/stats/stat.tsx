@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./stats.module.css";
-import { FaProjectDiagram, FaHandshake, FaUsers, FaRegSmile, FaRegUser } from "react-icons/fa";
+import { FaProjectDiagram, FaHandshake, FaUsers, FaRegUser } from "react-icons/fa";
 
 export function StatsSection() {
   return (
