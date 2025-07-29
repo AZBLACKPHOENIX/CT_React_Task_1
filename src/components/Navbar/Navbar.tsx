@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Navbar.module.css';
 import { FaBars, FaSearch } from 'react-icons/fa'; // Install react-icons if you haven’t
 
