@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import styles from './Navbar.module.css';
-import { FaBars, FaSearch } from 'react-icons/fa';
+import { FaBars, FaSearch } from 'react-icons/fa'; // Install react-icons if you haven’t
 
 export function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoSection}>
