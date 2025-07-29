@@ -21,7 +21,7 @@
     top:0;
     left:0;
     height: 100px;
-    z-index: 100;
+    z-index: 1000;
   }
   
   .logoSection {
@@ -80,7 +80,7 @@
         gap: 30%;
         display: flex;
         justify-content: space-around;
-        z-index: 0;
+        z-index: 1000;
 
     }
     
