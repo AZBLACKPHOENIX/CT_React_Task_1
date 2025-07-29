@@ -1,4 +1,4 @@
-import styles from './hr.module.css'
+import './hr.module.css'
 
 export function Line(){
   return(

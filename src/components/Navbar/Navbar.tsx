@@ -2,8 +2,6 @@ import styles from './Navbar.module.css';
 import { FaBars, FaSearch } from 'react-icons/fa';
 
 export function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoSection}>
