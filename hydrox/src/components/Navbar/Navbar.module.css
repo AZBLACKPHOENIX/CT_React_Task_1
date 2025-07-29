@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0ch;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: rgb(1, 192, 192);
+    background-color: rgba(44, 44, 44, 0.849);
+    width:100%;
+    position:fixed;
+    gap: 10rem;
+    top:0;
+    left:0;
+    height: 100px;
+    z-index: 100;
+  }
+  
+  .logoSection {
+    display: flex;
+    flex-direction: column;
+  line-height: 1.2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .logoSection H1{
+    font-size: 40PX;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .navLinks a {
+    color: rgb(1, 192, 192);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: 600;
+
+  }
+  
+  .navLinks a:hover {
+    color: rgb(0, 225, 255);
+  }
+
+
+  .icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    color: rgb(0, 89, 255);
+  }
+  
+  .menuIcon {
+    display: none;
+    font-size: 1.8rem;
+    z-index: 10;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar {
+        padding: 1rem 5%;
+        height: 70px;
+        gap: 30%;
+        display: flex;
+        justify-content: space-around;
+        z-index: 0;
+
+    }
+    
+    .navLinks {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+        padding-top: 3rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.4s ease-in-out, opacity 0.4s;
+        pointer-events: none;
+    }
+  
+    .showMenu {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+  
+    .menuIcon {
+        display: block;
+  
+    }
+    
+    .navLinks a {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoSection h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logoSection p {
+        font-size: 0.8rem;
+    }
+    
+    .navLinks {
+        gap: 2.5rem;
+        padding-top: 2rem;
+    }
+    
+    .icon {
+        font-size: 1.6rem;
+    }
+}

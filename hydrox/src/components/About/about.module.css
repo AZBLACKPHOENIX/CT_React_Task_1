@@ -1,0 +1,123 @@
+.aboutSection {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color:white;
+  }
+  
+  .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+  }
+  
+  .aboutImage {
+    flex: 1 1 350px;
+    margin-top: 2%;
+  }
+  
+  .aboutImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutContent {
+    flex: 1 1 450px;
+    text-align: left;
+    margin-top: 100px;
+  }
+  
+  .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-align: left;
+    color: rgb(1, 192, 192);
+  }
+  
+  .heading {
+    font-size: 3.5rem;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:300;
+  }
+  
+  .themeColor {
+    color: rgb(1, 192, 192);
+  }
+  
+
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .iconsRow {
+    display: flex;  
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .iconCard {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .icon {
+    color: rgb(1, 192, 192);
+    margin-bottom: 10px;
+  }
+  
+
+  .iconHeading{
+    display: flex;
+    align-items: center;
+    gap:3%;
+    padding-left: 5%;
+
+  }
+
+  .iconCard h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .iconCard p {
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: left;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .aboutContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutImage,
+    .aboutContent {
+      flex: 1 1 100%;
+    }
+  
+    .iconsRow {
+      justify-content: center;
+    }
+  }
+  
